@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+
+"""
+Generate test data using the LMS Toolkit.
+"""
+
+import argparse
+import os
+import sys
+
+import autograder.testing.testdata
+
+THIS_DIR: str = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
+TEST_DATA_DIR: str = os.path.join(THIS_DIR, '..', 'testdata', 'http')
+
+DEFAULT_CONTAINER_NAME: str = 'autograder-generate-test-data'
+DEFAULT_IMAGE_NAME: str = 'ghcr.io/edulinq/autograder-server:3.6.1-prebuilt'
+DEFAULT_PORT: int = 8080
+
+def run_cli(args):
+    args = {
+        'server': f"127.0.0.1:{args.port}",
+        'server_start_command': f"docker run --rm -p {args.port}:8080 --name '{args.container_name}' '{args.image_name}' server --unit-testing",
+        'server_stop_command': f"docker kill '{args.container_name}'",
+        'http_exchanges_out_dir': args.out_dir,
+        'fail_fast': args.fail_fast,
+    }
+
+    return autograder.testing.testdata.generate(args)
+
+def main():
+    return run_cli(_get_parser().parse_args())
+
+def _get_parser():
+    parser = argparse.ArgumentParser(description = __doc__.strip())
+
+    parser.add_argument('--container-name', dest = 'container_name',
+        action = 'store', type = str, default = DEFAULT_CONTAINER_NAME,
+        help = 'The name for the container(s) that will be created and run (default: %(default)s).')
+
+    parser.add_argument('--image-name', dest = 'image_name',
+        action = 'store', type = str, default = DEFAULT_IMAGE_NAME,
+        help = 'The name of the image to run (default: %(default)s).')
+
+    parser.add_argument('--port', dest = 'port',
+        action = 'store', type = int, default = DEFAULT_PORT,
+        help = 'The name of the image to run (default: %(default)s).')
+
+    parser.add_argument('--out-dir', dest = 'out_dir',
+        action = 'store', type = str, default = TEST_DATA_DIR,
+        help = 'Where the output HTTP exchanges will be written (default: %(default)s).')
+
+    parser.add_argument('--fail-fast', dest = 'fail_fast',
+        action = 'store_true', default = False,
+        help = 'If true, stop on the first test failure (default: %(default)s).')
+
+    return parser
+
+if (__name__ == '__main__'):
+    sys.exit(main())
