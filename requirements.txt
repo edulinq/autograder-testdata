@@ -1,1 +1,2 @@
 autograder-py>=1.0.0
+edq-utils>=0.2.6

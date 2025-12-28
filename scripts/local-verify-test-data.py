@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Verify test data using the LMS Toolkit.
+Verify test data using a local source directory.
 """
 
 import argparse
@@ -11,22 +11,24 @@ import sys
 import autograder.testing.testdata
 
 THIS_DIR: str = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
-TEST_DATA_DIR: str = os.path.join(THIS_DIR, '..', 'testdata', 'http')
+ROOT_DIR: str = os.path.join(THIS_DIR, '..')
+TEST_DATA_DIR: str = os.path.join(ROOT_DIR, 'testdata', 'http')
 
-DEFAULT_CONTAINER_NAME: str = 'autograder-verify-test-data'
-DEFAULT_IMAGE_NAME: str = 'ghcr.io/edulinq/autograder-server:3.6.1-prebuilt'
+DEFAULT_SOURCE_DIR: str = os.path.join(ROOT_DIR, 'autograder-server')
 DEFAULT_PORT: int = 8080
 
 def run_cli(args):
-    args = {
+    config = {
         'server': f"127.0.0.1:{args.port}",
-        'server_start_command': f"docker run --rm -p {args.port}:8080 --name '{args.container_name}' '{args.image_name}' server --unit-testing",
-        'server_stop_command': f"docker kill '{args.container_name}'",
+        'server_start_command': f"go run cmd/server/main.go --unit-testing --log-level DEBUG --config web.port={args.port}",
+        'server_stop_command': "pkill -f 'go run cmd/server/main.go'",
         'test_data_dir': args.test_data_dir,
         'fail_fast': args.fail_fast,
     }
 
-    return autograder.testing.testdata.verify(args)
+    os.chdir(args.source_dir)
+
+    return autograder.testing.testdata.verify(config)
 
 def main():
     return run_cli(_get_parser().parse_args())
@@ -38,17 +40,13 @@ def _get_parser():
         action = 'store', type = str, default = TEST_DATA_DIR,
         help = 'The directory with test data to verify (default: %(default)s).')
 
-    parser.add_argument('--container-name', dest = 'container_name',
-        action = 'store', type = str, default = DEFAULT_CONTAINER_NAME,
-        help = 'The name for the container(s) that will be created and run (default: %(default)s).')
-
-    parser.add_argument('--image-name', dest = 'image_name',
-        action = 'store', type = str, default = DEFAULT_IMAGE_NAME,
-        help = 'The name of the image to run (default: %(default)s).')
+    parser.add_argument('--source-dir', dest = 'source_dir',
+        action = 'store', type = str, default = DEFAULT_SOURCE_DIR,
+        help = 'The source directory to build and run the autograder server from (default: %(default)s).')
 
     parser.add_argument('--port', dest = 'port',
         action = 'store', type = int, default = DEFAULT_PORT,
-        help = 'The name of the image to run (default: %(default)s).')
+        help = 'The port to use for the server (default: %(default)s).')
 
     parser.add_argument('--fail-fast', dest = 'fail_fast',
         action = 'store_true', default = False,

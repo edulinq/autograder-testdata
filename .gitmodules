@@ -1,0 +1,3 @@
+[submodule "autograder-server"]
+	path = autograder-server
+	url = https://github.com/edulinq/autograder-server.git
