@@ -21,7 +21,7 @@ def run_cli(args):
     config = {
         'server': f"127.0.0.1:{args.port}",
         'server_start_command': f"go run cmd/server/main.go --unit-testing --log-level DEBUG --config web.port={args.port}",
-        'server_stop_command': "pkill -f 'go run cmd/server/main.go'",
+        'server_stop_command': "pkill -f 'main --unit-testing --log-level DEBUG'",
         'test_data_dir': args.test_data_dir,
         'fail_fast': args.fail_fast,
     }
