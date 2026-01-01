@@ -19,7 +19,7 @@ AUTOGRADER_VERSION_PATH: str = os.path.join(ROOT_DIR, 'autograder-server', 'reso
 AUTOGRADER_VERSION: str = edq.util.json.load_path(AUTOGRADER_VERSION_PATH)['base-version']
 
 DEFAULT_CONTAINER_NAME: str = 'autograder-verify-test-data'
-DEFAULT_IMAGE_NAME: str = f"ghcr.io/edulinq/autograder-server:{AUTOGRADER_VERSION}-prebuilt"
+DEFAULT_IMAGE_NAME: str = f"ghcr.io/edulinq/autograder-server:{AUTOGRADER_VERSION}"
 DEFAULT_PORT: int = 8080
 
 def run_cli(args):
