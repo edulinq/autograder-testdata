@@ -6,7 +6,9 @@
         "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\"}"
     },
     "files": [],
-    "headers": {},
+    "headers": {
+        "edq-ag-write": "false"
+    },
     "allow_redirects": true,
     "response_code": 200,
     "response_headers": {},

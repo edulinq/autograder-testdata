@@ -6,7 +6,9 @@
         "content": "{\"course-id\": \"course101\", \"dry-run\": false, \"raw-course-users\": [{\"course-role\": \"student\", \"email\": \"server-user@test.edulinq.org\"}], \"send-emails\": false, \"skip-inserts\": false, \"skip-updates\": false, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
     },
     "files": [],
-    "headers": {},
+    "headers": {
+        "edq-ag-write": "true"
+    },
     "allow_redirects": true,
     "response_code": 200,
     "response_headers": {},
