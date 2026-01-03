@@ -1,0 +1,20 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/tokens/create",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"name\": \"new-token\", \"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"server-user@test.edulinq.org\", \"user-pass\": \"24ffc21469baecb37b0eed63e737fa07f95fa8cf40cfad84c57bcc5eb4130baf\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "true"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"token-cleartext\": \"64fbd6cce04ae69bebdcec1e43a0652d\", \"token-id\": \"8e3bf548-c9a7-4067-a2cb-0580d9304018\"}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"95307cc5\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "source_path": null,
+    "extra_options": {}
+}
