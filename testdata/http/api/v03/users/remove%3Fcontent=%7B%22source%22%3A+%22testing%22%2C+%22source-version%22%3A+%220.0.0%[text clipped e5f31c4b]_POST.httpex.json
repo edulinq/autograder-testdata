@@ -1,0 +1,20 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/remove",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"target-email\": \"course-student@test.edulinq.org\", \"user-email\": \"course-owner@test.edulinq.org\", \"user-pass\": \"b64e37dd98e0a08dd96bcbebb2d9f5b6b4d0957663dcc6799d2c15883928e905\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "true"
+    },
+    "allow_redirects": true,
+    "response_code": 403,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": null, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"-041\", \"message\": \"You have insufficient permissions for the requested operation.\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"95307cc5\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 403, \"success\": false}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "source_path": null,
+    "extra_options": {}
+}
