@@ -1,0 +1,20 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/auth",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"ZZZ\", \"user-pass\": \"71f3e86c42376ed1c9583f0117fad889f5139926594992b3f573e17939cb038f\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "false"
+    },
+    "allow_redirects": true,
+    "response_code": 401,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": null, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"Authentication failure, check email and password.\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"95307cc5\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 401, \"success\": false}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "source_path": null,
+    "extra_options": {}
+}
