@@ -1,0 +1,20 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/upsert",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"dry-run\": false, \"raw-users\": [{\"email\": \"new-user@test.edulinq.org\", \"pass\": \"password123\", \"role\": \"user\"}, {\"email\": \"server-admin@test.edulinq.org\", \"name\": \"New Name\"}], \"send-emails\": false, \"skip-inserts\": false, \"skip-updates\": false, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "true"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"results\": [{\"added\": true, \"email\": \"new-user@test.edulinq.org\"}, {\"email\": \"server-admin@test.edulinq.org\", \"modified\": true}]}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"95307cc5\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "source_path": null,
+    "extra_options": {}
+}
