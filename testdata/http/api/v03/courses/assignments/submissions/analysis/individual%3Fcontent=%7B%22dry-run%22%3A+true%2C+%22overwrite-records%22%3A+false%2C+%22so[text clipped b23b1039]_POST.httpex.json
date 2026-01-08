@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/courses/assignments/submissions/analysis/individual",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"dry-run\": true, \"overwrite-records\": false, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"submissions\": [\"course101::hw0::course-student@test.edulinq.org::1697406256\", \"course101::hw0::course-student@test.edulinq.org::1697406265\"], \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\", \"wait-for-completion\": false}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "true"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"complete\": false, \"options\": {\"dry-run\": true, \"overwrite-records\": false, \"submissions\": [\"course101::hw0::course-student@test.edulinq.org::1697406256\", \"course101::hw0::course-student@test.edulinq.org::1697406265\"], \"wait-for-completion\": false}, \"results\": {}, \"summary\": {\"aggregate-lines-of-code\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"aggregate-lines-of-code-delta\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"aggregate-lines-of-code-per-file\": null, \"aggregate-lines-of-code-per-hour\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"aggregate-score\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"aggregate-score-delta\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"aggregate-score-per-hour\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"aggregate-submission-time-delta\": {\"count\": 0, \"max\": 0, \"mean\": 0, \"median\": 0, \"min\": 0}, \"complete\": false, \"complete-count\": 0, \"error-count\": 0, \"failure-count\": 0, \"first-timestamp\": 0, \"last-timestamp\": 0, \"pending-count\": 2}, \"work-errors\": {}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"95307cc5\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "finalize": null,
+    "source_path": null,
+    "extra_options": {}
+}
