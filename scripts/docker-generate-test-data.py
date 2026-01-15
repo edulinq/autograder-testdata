@@ -25,7 +25,7 @@ DEFAULT_PORT: int = 8080
 def run_cli(args):
     config = {
         'server': f"127.0.0.1:{args.port}",
-        'server_start_command': f"docker run --rm -p {args.port}:8080 --name '{args.container_name}' '{args.image_name}' server --unit-testing",
+        'server_start_command': f"docker run --rm -p {args.port}:8080 --name '{args.container_name}' '{args.image_name}' server --unit-testing --config docker.disable=true",
         'server_stop_command': f"docker kill '{args.container_name}'",
         'http_exchanges_out_dir': args.out_dir,
         'fail_fast': args.fail_fast,
