@@ -13,7 +13,7 @@
     "response_code": 200,
     "response_headers": {},
     "json_body": false,
-    "response_body": "{\"content\": {\"found-user\": true}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"95307cc5\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_body": "{\"content\": {\"found-user\": true}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"63345604\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
     "response_modifier": "autograder.util.net.clean_api_response",
     "finalize": null,
     "source_path": null,
