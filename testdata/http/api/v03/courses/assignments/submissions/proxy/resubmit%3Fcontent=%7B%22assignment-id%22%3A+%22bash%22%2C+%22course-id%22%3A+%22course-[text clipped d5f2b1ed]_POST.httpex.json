@@ -3,7 +3,7 @@
     "url_path": "api/v03/courses/assignments/submissions/proxy/resubmit",
     "url_anchor": null,
     "parameters": {
-        "content": "{\"assignment-id\": \"bash\", \"course-id\": \"course-languages\", \"proxy-email\": \"course-student@test.edulinq.org\", \"proxy-time\": 12345, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
+        "content": "{\"assignment-id\": \"bash\", \"course-id\": \"course-languages\", \"proxy-email\": \"course-student@test.edulinq.org\", \"proxy-time\": 12345000, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
     },
     "files": [],
     "headers": {
