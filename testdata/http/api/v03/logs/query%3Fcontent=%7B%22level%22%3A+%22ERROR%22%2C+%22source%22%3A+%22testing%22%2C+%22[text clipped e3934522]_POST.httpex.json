@@ -3,7 +3,7 @@
     "url_path": "api/v03/logs/query",
     "url_anchor": null,
     "parameters": {
-        "content": "{\"level\": \"ERROR\", \"source\": \"testing\", \"source-version\": \"0.0.0\", \"target-course\": \"course101\", \"user-email\": \"server-user@test.edulinq.org\", \"user-pass\": \"24ffc21469baecb37b0eed63e737fa07f95fa8cf40cfad84c57bcc5eb4130baf\"}"
+        "content": "{\"level\": \"ERROR\", \"source\": \"testing\", \"source-version\": \"0.0.0\", \"target-course\": \"course101\", \"use-testing-data\": false, \"user-email\": \"server-user@test.edulinq.org\", \"user-pass\": \"24ffc21469baecb37b0eed63e737fa07f95fa8cf40cfad84c57bcc5eb4130baf\"}"
     },
     "files": [],
     "headers": {

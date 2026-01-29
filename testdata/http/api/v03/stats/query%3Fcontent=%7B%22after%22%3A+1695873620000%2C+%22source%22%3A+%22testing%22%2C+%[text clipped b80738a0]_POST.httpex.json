@@ -3,7 +3,7 @@
     "url_path": "api/v03/stats/query",
     "url_anchor": null,
     "parameters": {
-        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"type\": \"grading-time\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
+        "content": "{\"after\": 1695873620000, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"type\": \"grading-time\", \"use-testing-data\": false, \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
     },
     "files": [],
     "headers": {

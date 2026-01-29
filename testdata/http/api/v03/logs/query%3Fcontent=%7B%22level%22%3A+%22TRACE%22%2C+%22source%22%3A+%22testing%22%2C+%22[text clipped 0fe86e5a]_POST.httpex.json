@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/logs/query",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"level\": \"TRACE\", \"source\": \"testing\", \"source-version\": \"0.0.0\", \"use-testing-data\": true, \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "false"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"error\": null, \"results\": [{\"assignment\": \"hw0\", \"course\": \"course101\", \"level\": -20, \"message\": \"Trace Course Log\", \"timestamp\": 100, \"user\": \"course-other@test.edulinq.org\"}, {\"level\": -20, \"message\": \"Trace Server Log\", \"timestamp\": 150, \"user\": \"server-user@test.edulinq.org\"}, {\"assignment\": \"hw0\", \"course\": \"course101\", \"level\": -10, \"message\": \"Debug Course Log\", \"timestamp\": 200, \"user\": \"course-student@test.edulinq.org\"}, {\"level\": -10, \"message\": \"Debug Server Log\", \"timestamp\": 250, \"user\": \"server-creator@test.edulinq.org\"}, {\"assignment\": \"hw0\", \"course\": \"course101\", \"level\": 0, \"message\": \"Info Course Log\", \"timestamp\": 300, \"user\": \"course-grader@test.edulinq.org\"}, {\"level\": 0, \"message\": \"Info Server Log\", \"timestamp\": 350, \"user\": \"server-admin@test.edulinq.org\"}, {\"assignment\": \"hw0\", \"course\": \"course101\", \"error\": \"Course Warning\", \"level\": 10, \"message\": \"Warn Course Log\", \"timestamp\": 400, \"user\": \"course-admin@test.edulinq.org\"}, {\"error\": \"Server Warning\", \"level\": 10, \"message\": \"Warn Server Log\", \"timestamp\": 450, \"user\": \"server-owner@test.edulinq.org\"}, {\"course\": \"course101\", \"error\": \"Course Error\", \"level\": 20, \"message\": \"Error Course Log\", \"timestamp\": 500, \"user\": \"course-owner@test.edulinq.org\"}, {\"error\": \"Server Error\", \"level\": 20, \"message\": \"Error Server Log\", \"timestamp\": 550}, {\"course\": \"course101\", \"level\": 30, \"message\": \"Fatal Course Log\", \"timestamp\": 600}, {\"level\": 30, \"message\": \"Fatal Server Log\", \"timestamp\": 650}], \"success\": true}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"3da93e85\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "finalize": null,
+    "source_path": null,
+    "extra_options": {}
+}
