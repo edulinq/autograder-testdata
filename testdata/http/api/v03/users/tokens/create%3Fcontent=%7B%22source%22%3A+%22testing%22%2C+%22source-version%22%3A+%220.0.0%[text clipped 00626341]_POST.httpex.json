@@ -13,7 +13,7 @@
     "response_code": 200,
     "response_headers": {},
     "json_body": false,
-    "response_body": "{\"content\": {\"found-user\": true, \"token-cleartext\": \"test-token-cleartext\", \"token-info\": {\"access-time\": 1771787693369, \"creation-time\": 1771787693369, \"id\": \"317bd422-8663-4534-87d3-fade3de6a9f5\", \"name\": \"\", \"source\": \"user\"}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"66639ce2\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_body": "{\"content\": {\"found-user\": true, \"token-cleartext\": \"test-token-cleartext\", \"token-info\": {\"access-time\": 123456789, \"creation-time\": 123456789, \"id\": \"test-token-id\", \"name\": \"\", \"source\": \"user\"}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"66639ce2\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
     "response_modifier": "autograder.util.net.clean_api_response",
     "finalize": null,
     "source_path": null,
