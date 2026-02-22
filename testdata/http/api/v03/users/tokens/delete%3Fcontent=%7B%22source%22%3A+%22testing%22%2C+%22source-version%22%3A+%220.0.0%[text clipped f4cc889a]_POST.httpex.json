@@ -3,7 +3,7 @@
     "url_path": "api/v03/users/tokens/delete",
     "url_anchor": null,
     "parameters": {
-        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"token-id\": \"ZZZ\", \"user-email\": \"course-admin@test.edulinq.org\", \"user-pass\": \"c22755f48fa0ef601e8d57a3ba169eeda80e9b2d4eaecc2c2ca2ffc887722f7c\"}"
+        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"target-user\": \"course-student@test.edulinq.org\", \"token-id\": \"ZZZ\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
     },
     "files": [],
     "headers": {
