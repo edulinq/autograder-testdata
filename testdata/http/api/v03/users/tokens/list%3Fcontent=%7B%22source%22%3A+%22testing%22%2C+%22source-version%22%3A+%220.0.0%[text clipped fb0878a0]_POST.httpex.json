@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/tokens/list",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"target-user\": \"ZZZ@test.edulinq.org\", \"user-email\": \"server-admin@test.edulinq.org\", \"user-pass\": \"0bbd8baf32ffe3b12b8f0901cc7adb562a62aad964d48cc394c76af9609a8f81\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "false"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"found-user\": false, \"tokens\": null}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"66639ce2\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "finalize": null,
+    "source_path": null,
+    "extra_options": {}
+}
