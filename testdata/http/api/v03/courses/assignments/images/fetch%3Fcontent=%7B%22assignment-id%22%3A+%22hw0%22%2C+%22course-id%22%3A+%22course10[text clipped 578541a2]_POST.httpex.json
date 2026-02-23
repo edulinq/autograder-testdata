@@ -13,7 +13,7 @@
     "response_code": 200,
     "response_headers": {},
     "json_body": false,
-    "response_body": "{\"content\": {\"bytes\": \"H4sIAAAAAAAC//NIzcnJ11EIzy/KSVHkAgCEnui0DgAAAA==\", \"gzip\": true, \"image-info\": {\"created-timestamp\": 123456789, \"gzip-size-bytes\": 34, \"name\": \"autograder.course101.hw0\", \"size-bytes\": 14}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"66639ce2\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_body": "{\"content\": {\"bytes\": \"H4sIAAAAAAAC//NIzcnJ11EIzy/KSVHkAgCEnui0DgAAAA==\", \"gzip\": true, \"image-info\": {\"built\": true, \"created-timestamp\": 123456789, \"gzip-size-bytes\": 34, \"name\": \"autograder.course101.hw0\", \"size-bytes\": 14, \"source-info\": {\"image\": \"ghcr.io/edulinq/grader.python:0.1.1.0-alpine\", \"max-runtime-secs\": 300, \"static-files\": [{\"path\": \"grader.py\", \"type\": \"path\"}]}}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"bb4d8b42\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
     "response_modifier": "autograder.util.net.clean_api_response",
     "finalize": null,
     "source_path": null,
