@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/tokens/delete",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"token-id\": \"3e2f642e-64bb-4da8-a861-ae71725c00d3\", \"user-email\": \"extra-course-student-4@test.edulinq.org\", \"user-pass\": \"6ee4b9d118b2abe033b9da454e8e624ddf57a56c4db3bb2c4cebe978f1da7dd4\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "true"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"found-token\": true, \"found-user\": true}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"bb4d8b42\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "finalize": null,
+    "source_path": null,
+    "extra_options": {}
+}

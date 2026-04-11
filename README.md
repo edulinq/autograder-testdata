@@ -50,8 +50,8 @@ you can use the `scripts/*-generate-test-data.py` scripts:
 # Use a pre-made Docker image.
 ./scripts/docker-generate-test-data.py
 
-# Use the autograder-server submodule.
-./scripts/local-generate-test-data.py ../autograder-server
+# Use the local autograder-server submodule.
+./scripts/local-generate-test-data.py
 ```
 
 This will generate test HTTP exchanges in the [testdata/http](testdata/http) directory.
@@ -66,8 +66,8 @@ you can use the `scripts/*-verify-test-data.py` scripts:
 # Use a pre-made Docker image.
 ./scripts/docker-verify-test-data.py
 
-# Use the autograder-server submodule.
-./scripts/local-verify-test-data.py ../autograder-server
+# Use the local autograder-server submodule.
+./scripts/local-verify-test-data.py
 ```
 
 This will verify that the test HTTP exchanges in the [testdata/http](testdata/http) directory
