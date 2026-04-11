@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/users/get",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"course-grader@test.edulinq.org\", \"user-pass\": \"6be92840236110ea654fc87be7e023f3b7cc0a965681f4371679cf6aedfaa822\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "false"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"courses\": {\"course-languages\": {\"assignments\": {\"bash\": {\"due-date\": 0, \"id\": \"bash\", \"name\": \"A Simple Bash Assignment\"}, \"cpp\": {\"id\": \"cpp\", \"name\": \"A Simple C++ Assignment\"}, \"java\": {\"id\": \"java\", \"name\": \"A Simple Java Assignment\"}}, \"id\": \"course-languages\", \"name\": \"Course Using Different Languages\"}, \"course101\": {\"assignments\": {\"hw0\": {\"id\": \"hw0\", \"name\": \"Homework 0\"}}, \"id\": \"course101\", \"name\": \"Course 101\"}}, \"found\": true, \"user\": {\"courses\": {\"course-languages\": {\"id\": \"course-languages\", \"role\": \"grader\"}, \"course101\": {\"id\": \"course101\", \"role\": \"grader\"}}, \"email\": \"course-grader@test.edulinq.org\", \"name\": \"course-grader\", \"role\": \"user\", \"type\": \"server\"}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"bb4d8b42\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "finalize": null,
+    "source_path": null,
+    "extra_options": {}
+}
