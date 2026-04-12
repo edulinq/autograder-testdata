@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url_path": "api/v03/courses/admin/update",
+    "url_anchor": null,
+    "parameters": {
+        "content": "{\"course-id\": \"course101\", \"dry-run\": false, \"skip-build-images\": true, \"skip-emails\": false, \"skip-lms-sync\": false, \"skip-source-sync\": false, \"skip-template-files\": false, \"source\": \"testing\", \"source-version\": \"0.0.0\", \"user-email\": \"course-admin@test.edulinq.org\", \"user-pass\": \"c22755f48fa0ef601e8d57a3ba169eeda80e9b2d4eaecc2c2ca2ffc887722f7c\"}"
+    },
+    "files": [],
+    "headers": {
+        "edq-ag-write": "true"
+    },
+    "allow_redirects": true,
+    "response_code": 200,
+    "response_headers": {},
+    "json_body": false,
+    "response_body": "{\"content\": {\"result\": {\"assignment-template-files\": {\"hw0\": [\"submission.py\"]}, \"built-assignment-images\": null, \"course-id\": \"course101\", \"created\": false, \"lms-sync-result\": {\"assignment-sync\": {\"ambiguous-matches\": [], \"non-matched-assignments\": [], \"synced-assignments\": [], \"unchanged-assignments\": []}, \"user-sync\": [{\"email\": \"course-admin@test.edulinq.org\", \"skipped\": true}, {\"email\": \"course-grader@test.edulinq.org\", \"skipped\": true}, {\"email\": \"course-other@test.edulinq.org\", \"skipped\": true}, {\"email\": \"course-owner@test.edulinq.org\", \"skipped\": true}, {\"email\": \"course-student@test.edulinq.org\", \"skipped\": true}]}, \"message\": \"\", \"success\": true, \"updated\": true}}, \"end-timestamp\": 0, \"id\": \"00000000-0000-0000-0000-000000000000\", \"locator\": \"\", \"message\": \"\", \"server-version\": {\"base-version\": \"3.6.2\", \"git-hash\": \"bb4d8b42\", \"is-dirty\": false}, \"start-timestamp\": 0, \"status\": 200, \"success\": true}",
+    "response_modifier": "autograder.util.net.clean_api_response",
+    "finalize": null,
+    "source_path": null,
+    "extra_options": {}
+}
